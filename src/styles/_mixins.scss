@@ -1,0 +1,34 @@
+// Mixin for small devices (mobile)
+@mixin respond-sm {
+  @media (max-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+// Mixin for medium devices (large mobile)
+@mixin respond-md {
+  @media (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+// Mixin for large devices (tablets)
+@mixin respond-lg {
+  @media (max-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+// Mixin for large devices (macbook)
+@mixin respond-xl {
+  @media (max-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+// Mixin for extra-large devices (desktops)
+@mixin respond-xl {
+  @media (max-width: $breakpoint-xxl) {
+    @content;
+  }
+}
