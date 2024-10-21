@@ -1,0 +1,34 @@
+.userCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 100%;
+  transition: all 0.4s;
+  box-sizing: border-box;
+}
+
+.userCard:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.userCard h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.userCard p {
+  margin: 5px 0;
+}
+
+.userCard a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.userCard a:hover {
+  text-decoration: underline;
+}

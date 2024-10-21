@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import { UserContext } from './context/UserConext';
+import UserCard from "./components/UserCard";
+import UserList from "./components/UserList";
 
 const App: React.FC = () => {
     const userContext = useContext(UserContext);
@@ -21,13 +23,7 @@ const App: React.FC = () => {
     return (
         <div>
             <h1>Header and <span>span</span></h1>
-            <ul>
-                {users.map((user) => (
-                    <li key={user.id}>
-                        {user.name} ({user.username}) - {user.email}
-                    </li>
-                ))}
-            </ul>
+            <UserList  users={users}/>
         </div>
     );
 };

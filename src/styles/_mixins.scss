@@ -19,6 +19,12 @@
   }
 }
 
+@mixin respond-md-min {
+  @media (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
 // Mixin for large devices (macbook)
 @mixin respond-xl {
   @media (max-width: $breakpoint-xl) {
