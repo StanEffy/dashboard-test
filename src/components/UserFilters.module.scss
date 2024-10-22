@@ -4,7 +4,6 @@
   align-items: center;
   margin-bottom: 20px;
   padding: 20px;
-
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -47,9 +46,9 @@
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
-
+  font-size: 0.9rem;
   @include respond-md {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     width: 100%;
   }
 }
