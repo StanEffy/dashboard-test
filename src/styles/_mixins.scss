@@ -19,8 +19,8 @@
   }
 }
 
-@mixin respond-md-min {
-  @media (min-width: $breakpoint-md) {
+@mixin respond-lg-min {
+  @media (min-width: $breakpoint-lg) {
     @content;
   }
 }
