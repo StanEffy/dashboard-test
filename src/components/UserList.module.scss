@@ -11,7 +11,7 @@
   @include respond-lg {
     grid-template-columns: repeat(2, 1fr);
   }
-  @include respond-sm {
+  @include respond-md {
     grid-template-columns: 1fr;
   }
   @include respond-lg-min {
