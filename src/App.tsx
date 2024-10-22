@@ -4,6 +4,7 @@ import { UserContext } from './context/UserConext';
 import UserList from "./components/UserList";
 import UserFilters from "./components/UserFilters";
 import styles from "./App.module.scss"
+import ThemeToggle from "./components/Theme/ThemeToggle";
 
 const App: React.FC = () => {
     const userContext = useContext(UserContext);
@@ -60,6 +61,7 @@ const App: React.FC = () => {
 
     return (
         <div className={styles.main}>
+            <ThemeToggle />
             <UserFilters onFilterChange={handleFilterChange} onSortChange={handleSortChange} />
             <UserList  users={filteredUsers}/>
         </div>

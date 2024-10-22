@@ -9,8 +9,28 @@ $breakpoint-xxl: 1440px;
 $content-width: 1200px;
 
 //color gamut
-$primary-color: #4299e1;
+:root {
+  --primary-color: #4299e1;
+  --main-bg: #fff;
+  --card-bg: #fff;
+  --text-color: #000;
 
-.dark {
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --box-shadow-active: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  --text-color-btn: #fff;
+}
+
+
+[data-theme="dark"] {
+  --primary-color: #96b0da;
+  --main-bg: #363636;
+  --card-bg: #252525;
+  --text-color: #fff;
+
+  --box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  --box-shadow-active: 0 2px 4px rgba(255, 196, 13, 0.2);
+
+  --text-color-btn: #000;
 
 }
