@@ -3,6 +3,7 @@ import { UserContext } from './context/UserConext';
 
 import UserList from "./components/UserList";
 import UserFilters from "./components/UserFilters";
+import styles from "./App.module.scss"
 
 const App: React.FC = () => {
     const userContext = useContext(UserContext);
@@ -58,8 +59,7 @@ const App: React.FC = () => {
     }
 
     return (
-        <div>
-            <h1>Header and <span>span</span></h1>
+        <div className={styles.main}>
             <UserFilters onFilterChange={handleFilterChange} onSortChange={handleSortChange} />
             <UserList  users={filteredUsers}/>
         </div>
