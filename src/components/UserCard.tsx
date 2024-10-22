@@ -6,7 +6,7 @@ const UserCard: React.FC<{ user: User }> = ({ user }) => {
     const { name, email, phone, website, address } = user;
 
     return (
-        <li className={styles.userCard}>
+        <li className={styles.userCard} tabIndex={0}>
             <h2>{name}</h2>
             <p><strong>Email:</strong> {email}</p>
             <p><strong>Phone:</strong> {phone}</p>
