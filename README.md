@@ -13,5 +13,7 @@ A responsive React TypeScript dashboard application that displays and manages us
 ## Getting Started
 
 npm run dev    # Starts development server on port 3000
+
 npm run build  # Builds for production
+
 npm run serve  # Previews production build
