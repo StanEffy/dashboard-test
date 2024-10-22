@@ -17,20 +17,42 @@
   outline: none;
 }
 
-.userCard h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.userName {
+  margin: 0 0 0.5rem;
+  color: #2d3748;
 }
 
-.userCard p {
-  margin: 5px 0;
+.userDetails {
+  margin: 0;
 }
 
-.userCard a {
-  color: #007bff;
+.detailGroup {
+  margin-bottom: 0.75rem;
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  gap: 0.5rem;
+}
+
+.detailLabel {
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.detailValue {
+  margin: 0;
+}
+
+.detailValue a {
+  color: $primary-color;
   text-decoration: none;
 }
 
-.userCard a:hover {
+.detailValue a:hover {
   text-decoration: underline;
+}
+
+.detailValue a:focus {
+  outline: 2px solid $primary-color;
+  outline-offset: 2px;
+  border-radius: 2px;
 }
