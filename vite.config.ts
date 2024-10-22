@@ -7,5 +7,8 @@ export default defineConfig({
                 additionalData: `@import "./src/styles/main.scss";`
             }
         }
+    },
+    server: {
+        port: 3000
     }
 })
